@@ -28,3 +28,15 @@ joined_users = {'#general': []}
 @app.route("/")
 def index():
     return render_template("index.html", channels=channels)
+
+# check username is already existing, if it is available add to the users list
+@app.route("/check_username", methods=["POST"])
+def check_username():
+    username = request.form.get("username")
+    username = username.strip()
+    # check username is already existing
+    if username in users:
+        return jsonify({"success": False})
+
+    users.append(username)
+    return jsonify({"success": True})
