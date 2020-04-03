@@ -28,6 +28,22 @@
             </form>
         </div>
     </div>
+    
+    <div id="overlay_channel_creation">
+        <div id="text_channel_creation">
+            <div class="cancel-button"><button id="cancel_create" type="submit">X</button></div>
+            <h3 class="heading">Create a channel</h3>
+            <p class="msg">Channels are where your team communicates. They’re best when organized around a topic — #marketing, for example.</p>
+            <div><span id="error_channel_creation"></span></div>
+            <form id="form_create_channel" method="post">
+                <ul>
+                    <li><label>Name:</label></li>
+                    <li><input type="text" id="channel_name" class="input-fields" required style="text-transform:lowercase" maxlength="20"></li>
+                    <li><button id="create_channel" type="submit" class="submit-fields">Create</button></li>
+                </ul>
+            </form>
+        </div>
+    </div>
 
 </body>
 
