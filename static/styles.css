@@ -61,3 +61,63 @@
  #overlay_sign_up {
      background-color: rgb(255, 255, 255);
  }
+
+#overlay_channel_creation {
+     background-color: rgba(0, 0, 0, 0.71);
+ }
+
+ #text_sign_up,
+ #text_channel_creation {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     font-size: 2rem;
+     color: #000000;
+     background-color: #ffffff;
+     border: 1px solid #689f38;
+     padding: 30px;
+     border-radius: 5px;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+ }
+
+ /*channel addition button*/
+ #add_channel {
+     border-radius: 100%;
+     width: 30px;
+     background-color: #2b5d01;
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     text-align: center;
+     vertical-align: middle;
+     border: 1px solid white;
+     float: right;
+     cursor: pointer;
+ }
+
+ #add_channel:focus {
+     outline: none;
+ }
+
+ .channel,
+ .selected_channel {
+     width: 100%;
+     padding: 10px;
+     cursor: pointer;
+     border-bottom: 1px solid white;
+ }
+
+ .channel {
+     background-color: #95c72d;
+     color: #1f380a;
+ }
+
+ .channel:hover {
+     background-color: rgba(255, 255, 0, 0.5);
+ }
+
+ .selected_channel {
+     background-color: #1f380a;
+     color: #ffffff;
+ }
