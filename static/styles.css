@@ -62,7 +62,7 @@
      background-color: rgb(255, 255, 255);
  }
 
-#overlay_channel_creation {
+ #overlay_channel_creation {
      background-color: rgba(0, 0, 0, 0.71);
  }
 
@@ -120,4 +120,337 @@
  .selected_channel {
      background-color: #1f380a;
      color: #ffffff;
+ }
+
+ /*
+ .selected_channel:hover {
+     background-color: #95c72d;
+     color: #1f380a;
+ }
+*/
+ /*recived messages div*/
+ #messages {
+     overflow-y: scroll;
+     height: 65%;
+ }
+
+
+ /* each message */
+ .messageContainer {
+     position: relative;
+     padding: 10px;
+     width: 99%;
+     background-color: #ffffff;
+     border-radius: 5px;
+     margin: 4px;
+ }
+
+ /*setting different background color for messages current user sent*/
+ .myMessages {
+     background-color: rgba(250, 250, 0, 0.76);
+ }
+
+ /* The overlay effect - lays on top of the above container*/
+ .messageOverlay {
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: rgba(255, 255, 255, 0.85);
+     border: solid #b9b8b8 2px;
+     color: #fae335;
+     width: 60px;
+     transition: .5s ease;
+     opacity: 0;
+     color: white;
+     font-size: 20px;
+     padding: 5px;
+     text-align: center;
+ }
+
+ .messageContainer:hover .messageOverlay {
+     opacity: 1;
+ }
+
+
+ .emoji_thumbs_up {
+     cursor: pointer;
+ }
+
+ .tooltip {
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+
+ }
+
+ .tooltip .tooltiptext {
+     visibility: hidden;
+     top: 100%;
+     left: 50%;
+     background-color: #2b5d01;
+     color: #ffffff;
+     text-align: left;
+     border-radius: 6px;
+     padding: 10px;
+
+     /* Position the tooltip */
+     position: absolute;
+     z-index: 1;
+ }
+
+ .tooltip:hover .tooltiptext {
+     visibility: visible;
+ }
+
+ .msg {
+     font-size: 1.2rem;
+     width: 500px;
+     text-align: justify;
+ }
+
+ .heading {
+     color: #689f38;
+ }
+
+ .input-fields {
+     width: 500px;
+     height: 50px;
+     font-size: 1.5rem;
+     border-radius: 5px;
+     color: #5c5c5c;
+     border: 1px solid #689f38;
+ }
+
+ .input-fields:focus,
+ .submit-fields:focus {
+     outline: none;
+ }
+
+ .submit-fields {
+     width: 500px;
+     height: 50px;
+     font-size: 1.5rem;
+     font-weight: 600;
+     border-radius: 5px;
+     border: 0;
+     color: #ffffff;
+     background-color: #689f38;
+     cursor: pointer;
+
+ }
+
+ .submit-fields:hover {
+     background-color: #82c646;
+ }
+
+ .heading-div {
+     display: flex;
+ }
+
+ #logo-img {
+     margin-left: 100px;
+     max-width: 100px;
+     width: 100%;
+     height: 100px;
+ }
+
+ #logo-img-inside {
+     max-width: 60px;
+     width: 100%;
+     height: 60px;
+     margin-right: 20px;
+ }
+
+ #error_sign_up,
+ #error_channel_creation {
+     font-size: 1.5rem;
+     width: 500px;
+     background-color: #ffffff;
+     border: 1px #d93025 solid;
+     color: #d93025;
+     border-radius: 5px;
+     padding: 10px;
+     display: none;
+     margin: 10px 0;
+ }
+
+
+
+ .cancel-button {
+     text-align: right;
+ }
+
+ #cancel_create {
+     font-size: 2rem;
+     background-color: #ffffff;
+     color: #689f38;
+     border: 0;
+     cursor: pointer;
+ }
+
+ #cancel_create:focus {
+     outline: none;
+ }
+
+ #cancel_create:hover {
+     color: #82c646;
+ }
+
+ .main-container {
+
+     max-width: 1200px;
+     height: 95vh;
+     display: flex;
+     margin: auto;
+
+
+ }
+
+ .channel-main-container {
+     width: 35%;
+     height: 100%;
+     padding: 40px;
+     font-size: 1.5rem;
+     background-color: #689f38;
+     color: #ffffff;
+     overflow-y: scroll;
+     z-index: 2;
+
+ }
+
+ .msg-main-container {
+     width: 65%;
+     height: 100%;
+     padding: 20px;
+     font-size: 1rem;
+     background-color: #defdc3;
+
+ }
+
+ .time {
+     font-size: 0.8rem;
+     color: #797878;
+ }
+
+ #channel_selected_name {
+     padding: 10px;
+     color: #ffffff;
+     background-color: #1f380a;
+     font-size: 1.5rem;
+     border-radius: 5px;
+ }
+
+ #channels {
+     margin-top: 10px;
+ }
+
+ /* Tooltip container for channel addition */
+ .tooltip-ch {
+     position: relative;
+     display: inline-block;
+     float: right;
+ }
+
+ /* Tooltip text */
+ .tooltip-ch .tooltiptext-ch {
+     visibility: hidden;
+     width: 120px;
+     background-color: #2b5d01;
+     color: #fff;
+     text-align: center;
+     padding: 5px 0;
+     border-radius: 6px;
+
+     /* Position the tooltip text */
+     position: absolute;
+     z-index: 3;
+     bottom: 125%;
+     left: 50%;
+     margin-left: -60px;
+
+     /* Fade in tooltip */
+     opacity: 0;
+     transition: opacity 0.3s;
+     font-size: 1rem;
+ }
+
+ /* Tooltip arrow */
+ .tooltip-ch .tooltiptext-ch::after {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: #2b5d01 transparent transparent transparent;
+ }
+
+ /* Show the tooltip text when you mouse over the tooltip container */
+ .tooltip-ch:hover .tooltiptext-ch {
+     visibility: visible;
+     opacity: 1;
+ }
+
+
+ @media (max-width:768px) {
+
+     .main-container {
+
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         margin: auto;
+
+     }
+
+     .channel-main-container {
+         width: 100%;
+
+     }
+
+     .msg-main-container {
+         width: 100%;
+         height: 100%;
+     }
+
+     #messages {
+         overflow-y: scroll;
+         height: 50%;
+     }
+
+     #text_sign_up,
+     #text_channel_creation {
+         font-size: 1rem;
+         max-width: 550px;
+         width: 90%;
+     }
+
+     #error_sign_up,
+     #error_channel_creation {
+         font-size: 0.8rem;
+         max-width: 500px;
+         width: 95%;
+     }
+
+     .msg {
+         font-size: 0.8rem;
+         max-width: 500px;
+         width: 95%;
+
+     }
+
+     .input-fields ,.submit-fields {
+         width: 95%;
+         max-width: 500px;
+         font-size: 1rem;
+
+     }
+
+     #logo-img {
+         margin-left: 10px;
+         max-width: 50px;
+         width: 100%;
+         height: 100%;
+     }
  }
