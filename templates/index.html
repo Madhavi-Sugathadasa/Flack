@@ -19,7 +19,7 @@
             <form id="form_sign_up" method="post">
                 <ul>
                     <li><label>Username:</label></li>
-                    <li><input type="text" id="username" class="input-fields" required style="text-transform:lowercase" maxlength="20"></li>
+                    <li><input type="text" id="username" class="input-fields" required style="text-transform:lowercase" maxlength="20" ></li>
                     <li>
                         <p class="msg">your username will be displayed with messages you send.</p>
                     </li>
@@ -28,7 +28,6 @@
             </form>
         </div>
     </div>
-    
     <div id="overlay_channel_creation">
         <div id="text_channel_creation">
             <div class="cancel-button"><button id="cancel_create" type="submit">X</button></div>
@@ -42,6 +41,28 @@
                     <li><button id="create_channel" type="submit" class="submit-fields">Create</button></li>
                 </ul>
             </form>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="channel-main-container">
+            <div class="heading-div"><img src="{{ url_for('static', filename='logo.png') }}" id="logo-img-inside" alt="Flack-logo">
+                <h1>Flack</h1>
+            </div>
+            <hr>
+            <div>Hello!, <span id="username_tag"></span></div>
+            <hr>
+            <div>Channels <span class="tooltip-ch"><span class="tooltiptext-ch">Add channels</span><button id="add_channel" >+</button></span></div>
+            <div id="channels">
+                {% for channel in channels %}
+                <div class="channel" id="channel_{{loop.index - 1}}" data-channel="{{loop.index - 1}}" data-joined="false">{{ channel }}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="msg-main-container">
+            <div id="channel_selected_name"></div>
+            <div id="messages">
+            </div>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
         </div>
     </div>
 
