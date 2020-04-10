@@ -18,6 +18,13 @@ Technologies: Javascript, python, flask, HTML5, CSS3 and Bootstrap 4.
 
 6. **Remembering the Channel**: If a user is on a channel page, closes the web browser window, and goes back to the web application, the application will remember what channel the user was on previously and take the user back to that channel.
 
+
+Apart from the features mentioned above, I decided to add a default channel titled “#general” and once users signup with their user names, that channel will be automatically selected & user will be automatically diverted to the channel. If user creates a new channel, then all other users will be able to see that channel & by clicking on the channel, they will also join the channel. An automatic message will be sent on the channel when the channel is clicked for the first time.
+
+For the **personal touch**, next to each message, there will be a **like icon** (thumbs up icon) where users can acknowledge or approve a message by clicking on it. Also if they already have put a like, they can unlike it by clicking on it again.
+
+Let me explain each file in details.
+
 ---
 
 
