@@ -50,4 +50,8 @@ Small description about each route
 6. route("/get_thumbs_up_users", methods=[“POST"]) - get list of users who liked a message
 
 
-
+Small description about each socket
+1. Socket on("send message”) - listener for messaging, add message to the messages dictionary & broadest the message to other users
+2. Socket  on("create channel”) - listener for channel addition and broadcast any new channel to other users
+3. Socket on("update thumbs”) - listener to update likes (thumbs up count), and broadcast updated like count and list of users who liked to other users
+---
