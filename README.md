@@ -27,4 +27,14 @@ Let me explain each file in details.
 
 ---
 
+**application.py** -  7 global variables are used including a constant. 
+
+1. global variable  **_message_id_**  - each message has a id , this is a incrementing value by one
+2. global variable **_users_** - list of all users 
+3. global variable **_channels_** - list of all channels
+4. global variable **_messages_** - a dictionary - each key is channel name and then value is a list  of all messages sent on that channel. 
+5. global variable **_thumbs_** - a dictionary - each key is a message message ( repeated?) id and value is a list of all users who liked that message
+6. global variable **_joined_users_** - a dictionary - key is the channel name and value is a list of all users who joined that channel
+7. Constant **_NO_OF_RESULTS_PER_CHANNEL_** - this is set to 100
+
 
