@@ -38,3 +38,16 @@ Let me explain each file in details.
 7. Constant **_NO_OF_RESULTS_PER_CHANNEL_** - this is set to 100
 
 
+
+**6 routes and 3 sockets** were used.
+
+Small description about each route
+1. route(“/") - for displaying the index page
+2. route("/check_username", methods=[“POST"]) - check username is already existing, if not add to the **_users_** list
+3. route("/check_channel", methods=[“POST"]) - check channel name is already existing, if not add to the **_channels_** list
+4. route("/get_messages", methods=[“POST"]) - get all messages relevant to a selected channel
+5. route("/update_just_joined", methods=[“POST"]) - check whether user just joined the channel, if yes add to the **_joined_users_** dictionary
+6. route("/get_thumbs_up_users", methods=[“POST"]) - get list of users who liked a message
+
+
+
