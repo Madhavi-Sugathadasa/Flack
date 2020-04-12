@@ -71,4 +71,18 @@ Small description about each socket
 3. Socket socket_thumbs - controlling like count & liked users without refreshing the page
 
 
+**3 local storage objects** were used to save **_username_** and **_selected channel_** and **_its id_**
+
+**4 Ajax calls** were used
+1. to check whether username is already existing 
+2. to check whether channel name is already existing 
+3. to get all messages for a selected channel once clicked on the channel
+4. To check whether a user has just joined the channel
+
+---
+
+**logo.png**  - I created this logo 
+
+---
+
 
