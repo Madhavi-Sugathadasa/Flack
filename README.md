@@ -1,7 +1,7 @@
 # Flack
 Created an **online messaging service** named as **Flack** using **Socket.IO** to communicate between clients and servers.
 
-Technologies: Javascript, python, flask, HTML5, CSS3 and Bootstrap 4.
+Technologies: Javascript, python, flask, HTML5, CSS3 and Bootstrap 4. App is responsive on a mobile screen and a larger window.
 
 View Screencast on https://www.youtube.com/watch?v=203qFafnLxU
 
