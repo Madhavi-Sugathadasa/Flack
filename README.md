@@ -54,4 +54,21 @@ Small description about each socket
 1. Socket on("send message”) - listener for messaging, add message to the messages dictionary & broadest the message to other users
 2. Socket  on("create channel”) - listener for channel addition and broadcast any new channel to other users
 3. Socket on("update thumbs”) - listener to update likes (thumbs up count), and broadcast updated like count and list of users who liked to other users
+
 ---
+
+**index.html** - this is a single html page app. There are two forms, one for user sign up & another for channel addition 
+
+---
+
+**styles.css** - Instead of using Bootstrap for styling and I have written all css by myself. I wanted to create a modern looking online application.
+
+---
+
+**index.js** - there are **3 sockets** 
+1. Socket socket_messages - control messaging without refreshing the page
+2. Socket socket_channels - controlling channel addition without refreshing the page 
+3. Socket socket_thumbs - controlling like count & liked users without refreshing the page
+
+
+
